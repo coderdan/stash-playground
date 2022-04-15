@@ -23,8 +23,8 @@ ActiveRecord::Schema[7.0].define(version: 2022_04_13_232610) do
 
   create_table "patients", force: :cascade do |t|
     t.bigint "user_id"
-    t.decimal "height"
-    t.decimal "weight"
+    t.string "height_ciphertext"
+    t.string "weight_ciphertext"
     t.string "health_issues"
     t.string "allergies"
     t.datetime "created_at", null: false

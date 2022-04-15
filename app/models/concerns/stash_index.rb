@@ -23,6 +23,8 @@ module StashIndex
   end
 
   class_methods do
+    attr_writer :collection_name
+
     def search(field, condition, value)
       ids = collection.query(field, condition, value)
       where(stash_id: ids)
@@ -40,10 +42,6 @@ module StashIndex
     # Defaults to the name of the table
     def collection_name
       @collection_name || table_name
-    end
-
-    def collection_name=(name)
-      @collection_name = name
     end
   end
 end

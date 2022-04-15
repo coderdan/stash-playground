@@ -1,0 +1,22 @@
+* Add some associations
+* Query API
+ - Use a block that yields an object that has eq, <,>= and match functions on it
+* Split into gem
+ - Use a Railtie for the tasks and generators
+* Logging
+* Rake tasks
+ - Generate a stash schema (template) from existing model schema
+ - Wrap stash-cli
+ - Helper to "stashify" existing model (creates migration for stash_id and uuid if needed)
+* Collection schema
+ - DSL?
+ - Or maybe just JSON schema files in a directory (db/stash/users.json or something?)
+ - Rake task to
+   - create collection
+   - create all collections ("migrate")
+   - Detect changes and reindex (needs backend change)
+
+
+Later
+* Play with Cipher, Key Provider and Message Serializer
+
