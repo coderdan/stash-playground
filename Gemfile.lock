@@ -1,5 +1,5 @@
 PATH
-  remote: /Users/dan/Projects/CipherStash/activestash
+  remote: /home/dan/Data/projects/CipherStash/activestash
   specs:
     active_stash (0.1.0)
 
@@ -241,7 +241,7 @@ DEPENDENCIES
   webdrivers
 
 RUBY VERSION
-   ruby 2.7.2p137
+   ruby 2.7.1p83
 
 BUNDLED WITH
    2.2.17

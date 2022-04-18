@@ -1,9 +1,9 @@
 source "https://rubygems.org"
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
-ruby "2.7.2"
+ruby "2.7.1"
 
-gem "active_stash", path: "/Users/dan/Projects/CipherStash/activestash"
+gem "active_stash", path: "/home/dan/Data/projects/CipherStash/activestash"
 
 # Bundle edge Rails instead: gem "rails", github: "rails/rails", branch: "main"
 gem "rails", "~> 7.0.2", ">= 7.0.2.3"
