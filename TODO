@@ -4,8 +4,17 @@
 * Split into gem
  - Use a Railtie for the tasks and generators
 * Logging
-* Rake tasks
+* Config
+ - Use Rails config via Railtie instead of profile with CLI?
+ * Generator
  - Generate a stash schema (template) from existing model schema
+ - Use dynamic matchers
+ - Index everything
+ - This may imply that we could keep plaintext indexes in stash for non-sensitive data
+ - Overload where in ActiveRecord::Relation to warn that it won't work as expected (because the initial dataset is constrained)
+ - We may also want to provide the ability to index related fields (from associations) to support more complex querying
+ - Maybe we can use `where` instead of search
+* Rake tasks
  - Wrap stash-cli
  - Helper to "stashify" existing model (creates migration for stash_id and uuid if needed)
 * Collection schema

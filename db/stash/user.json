@@ -1,0 +1,46 @@
+{
+  "first_name_exact": {
+    "kind": "exact",
+    "field": "first_name"
+  },
+  "first_name_match": {
+    "kind": "match",
+    "fields": [
+      "first_name"
+    ],
+    "tokenFilters": [
+      {
+        "kind": "downcase"
+      },
+      {
+        "kind": "ngram",
+        "tokenLength": 3
+      }
+    ],
+    "tokenizer": {
+      "kind": "standard"
+    }
+  },
+  "last_name_exact": {
+    "kind": "exact",
+    "field": "last_name"
+  },
+  "last_name_match": {
+    "kind": "match",
+    "fields": [
+      "last_name"
+    ],
+    "tokenFilters": [
+      {
+        "kind": "downcase"
+      },
+      {
+        "kind": "ngram",
+        "tokenLength": 3
+      }
+    ],
+    "tokenizer": {
+      "kind": "standard"
+    }
+  }
+}
