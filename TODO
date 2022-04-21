@@ -1,13 +1,30 @@
 * Add some associations
 * Query API
- - Use a block that yields an object that has eq, <,>= and match functions on it
- - simple hash version (User.search(name: "Dan")) or User.search(name: match("Dan"))
  - Overload where in ActiveRecord::Relation to warn that it won't work as expected (because the initial dataset is constrained)
-* Logging
+
 * Collection schema
  - Rake task to
    - create collection
+   - Install (migrations for UUID and stash_id field)
    - Detect changes and reindex (needs backend change)
+* Rake tasks
+ - list/delete use stash.rb
+
+* Config
+ - workspace or profile
+ - keys etc
+
+* Queries
+ - Range queries
+   - between
+ - Ordering
+ - String ordering
+ - "all" index
+ - check that chaining to create etc still works
+
+* Tests
+ - Test basic AR functions?
+ - Query test
 
 * Docs
 - Getting started
