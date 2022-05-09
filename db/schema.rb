@@ -42,7 +42,7 @@ ActiveRecord::Schema[7.0].define(version: 2022_04_19_094050) do
     t.date "dob"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.uuid "stash_id"
+    t.string "stash_id"
     t.boolean "verified", default: false
   end
 

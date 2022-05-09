@@ -8,7 +8,9 @@ class CreateUsers < ActiveRecord::Migration[7.0]
       t.string :gender 
       t.date :dob
       t.timestamps
-      t.uuid :stash_id
+      t.string :stash_id
     end
+
+    add_index :users, :stash_id
   end
 end

@@ -6,9 +6,6 @@
  - Rake task to
    - create collection
    - Install (migrations for UUID and stash_id field)
-   - Detect changes and reindex (needs backend change)
-* Rake tasks
- - list/delete use stash.rb
 
 * Config
  - workspace or profile
