@@ -17,10 +17,17 @@
 * Queries
  - Range queries
    - between
- - Ordering
  - String ordering
  - "all" index
  - check that chaining to create etc still works
+ - count!
+ - min/max
+ - Option to use StashRelation as the default scope
+ - Overide where! This really would make a 1-line change
+ - Cast values to their field types so we could do something like dob > "1988-01-01"
+
+* Errors
+ - Proper error classes whenever we raise
 
 * Tests
  - Test basic AR functions?

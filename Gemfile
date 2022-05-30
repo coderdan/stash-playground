@@ -3,14 +3,18 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 ruby "2.7.4"
 
-gem "active_stash", path: "/home/dan/Data/projects/CipherStash/activestash"
-gem "cipherstash-client", path: "/home/dan/Data/projects/CipherStash/ruby-client"
+gem "active_stash" #, path: "/Users/dan/Projects/CipherStash/activestash"
+#gem 'cipherstash-client', path: "/Users/dan/Projects/CipherStash/ruby-client"
+
+#gem "active_stash_webui", path: "/Users/dan/Projects/CipherStash/active_stash_webui"
 
 # Bundle edge Rails instead: gem "rails", github: "rails/rails", branch: "main"
 gem "rails", "~> 7.0.2", ">= 7.0.2.3"
 
 # The original asset pipeline for Rails [https://github.com/rails/sprockets-rails]
 gem "sprockets-rails"
+
+gem 'faker', '~> 2.20'
 
 # Use postgresql as the database for Active Record
 gem "pg", "~> 1.1"
