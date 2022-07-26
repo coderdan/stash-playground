@@ -2,12 +2,13 @@ class User < ApplicationRecord
   include ActiveStash::Search
   has_one :patient
 
-  validates :title, :first_name, :last_name, :email, :dob, :gender, 
-    presence: true
-
   encrypts :first_name
   encrypts :last_name
   encrypts :email
+
+  validates :title, :first_name, :last_name,
+    :email, :dob, :gender, 
+    presence: true
 
   stash_index :first_name, :last_name, :email, :dob
   stash_index :gender, :title, only: :exact

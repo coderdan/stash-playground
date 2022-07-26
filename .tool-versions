@@ -1,5 +1,5 @@
 postgres 12.4
-ruby 2.7.6
+ruby 2.7.4
 nodejs 16.13.1
 python 3.10.4
 rust 1.57.0
